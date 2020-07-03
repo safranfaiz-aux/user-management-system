@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(60, 55, 99);
+  color: white;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:active{
+  text-decoration: none;
+}
+
+nav h1{
+  color: white;
+}
+ 
+.registration-form{
+  width: 100%;
+}
+
+.user-login{
+  width: 100%;
+}
