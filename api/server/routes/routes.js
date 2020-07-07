@@ -21,9 +21,7 @@ Router.post("/addUser", (request, response) => {
     let email = request.body.email;
     let password = request.body.password;
     let status = "1";
-
-    // console.log("Insert Query => "+ "inset into users ( first_name, last_name, email, password, status) values (" + fName + "," + lName + "," + email + "," + password + "," + status + " )");
-
+    
     dbConfig.query("insert into users ( first_name, last_name, email, password, status) values ( '"+fName+"','"+lName+"','"+email+"','"+password+"','"+status+"')",
         (err, result) => {
             if (!err) {
